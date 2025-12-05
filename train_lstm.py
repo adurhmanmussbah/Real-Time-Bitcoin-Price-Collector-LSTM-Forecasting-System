@@ -1,12 +1,3 @@
-import os
-import pyodbc
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
-from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-
 
 import os
 import pyodbc
@@ -137,5 +128,6 @@ if __name__ == '__main__':
 
     print(f"Model saved to: {checkpoint_path}")
     print(f"Scaler saved to: {scaler_path}")
+
 
     print("Training completed!")
